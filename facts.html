@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>태양계 탐험 - 비교·퀴즈</title>
+<meta name="description" content="행성 크기 비교, 행성별 나이 계산기, 이미지 출처">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="stars" aria-hidden="true"></div>
+<header class="site"><nav class="nav" aria-label="주 메뉴">
+  <a class="logo" href="index.html">태양계 <span>탐험</span></a>
+  <ul>
+    <li><a href="index.html">홈</a></li>
+    <li><a href="planets.html">행성 소개</a></li>
+    <li><a href="facts.html" aria-current="page">비교·퀴즈</a></li>
+  </ul>
+</nav></header>
+
+<main>
+<section class="wrap reveal">
+  <h1>행성 한눈에 비교</h1>
+  <p class="lead" style="margin-top:12px">막대는 목성(가장 큰 행성)을 100으로 놓은 지름 비교예요.</p>
+  <div id="bars" style="margin-top:20px"></div>
+</section>
+
+<section class="wrap reveal">
+  <h2>거리와 공전 주기</h2>
+  <div class="table-scroll">
+  <table>
+    <thead><tr><th>행성</th><th>태양까지 거리 (AU)</th><th>공전 주기</th><th>위성</th></tr></thead>
+    <tbody>
+      <tr><td>수성</td><td>약 0.39</td><td>약 88일</td><td>없음</td></tr>
+      <tr><td>금성</td><td>약 0.72</td><td>약 224.7일</td><td>없음</td></tr>
+      <tr><td>지구</td><td>1</td><td>약 365.25일</td><td>1개</td></tr>
+      <tr><td>화성</td><td>약 1.52</td><td>약 687일</td><td>2개</td></tr>
+      <tr><td>목성</td><td>약 5.2</td><td>약 11.9년</td><td>90개 이상</td></tr>
+      <tr><td>토성</td><td>약 9.6</td><td>약 29.4년</td><td>140개 이상</td></tr>
+      <tr><td>천왕성</td><td>약 19.2</td><td>약 84년</td><td>28개 이상</td></tr>
+      <tr><td>해왕성</td><td>약 30.1</td><td>약 164.8년</td><td>16개 이상</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="note">1 AU(천문단위)는 지구와 태양 사이의 평균 거리로, 약 1억 4,960만 km예요.</p>
+</section>
+
+<section class="wrap reveal">
+  <h2>다른 행성에서 나는 몇 살?</h2>
+  <p class="lead">지구 나이를 입력하면 각 행성의 1년(공전 주기)을 기준으로 계산해요.</p>
+  <form class="age" id="ageForm">
+    <label for="age">지구 나이</label>
+    <input id="age" type="number" min="0" max="120" value="15" inputmode="numeric">
+    <span>살</span>
+  </form>
+  <div id="ageOut" aria-live="polite"></div>
+</section>
+
+<section class="wrap reveal" id="credits">
+  <h2>이미지 출처와 안내</h2>
+  <ul class="credits">
+    <li>태양: NASA/SDO (AIA) — 퍼블릭 도메인</li>
+    <li>수성: NASA/JHUAPL/ASU/Carnegie Institution — 퍼블릭 도메인</li>
+    <li>금성: NASA — 퍼블릭 도메인 (Wikimedia Commons 표기: NASA or Ricardo Nunes)</li>
+    <li>지구: NASA/아폴로 17호 승무원 — 퍼블릭 도메인</li>
+    <li>화성: ESA &amp; MPS for OSIRIS Team — <a href="https://creativecommons.org/licenses/by-sa/3.0/igo/" rel="noopener">CC BY-SA 3.0 IGO</a> (출처를 밝히고 같은 조건으로 공유)</li>
+    <li>목성: NASA, ESA, A. Simon (Goddard Space Flight Center) — 퍼블릭 도메인</li>
+    <li>토성: NASA/JPL/Space Science Institute — 퍼블릭 도메인</li>
+    <li>천왕성: NASA/JPL-Caltech — 퍼블릭 도메인</li>
+    <li>해왕성: NASA — 퍼블릭 도메인</li>
+    <li>모든 이미지는 Wikimedia Commons에서 받았으며, 라이선스 표기는 해당 사이트 정보를 따랐어요.</li>
+    <li>행성 수치는 기존 지식 기반의 대략값이에요. 위성 수는 계속 바뀌므로 정확한 최신 값은 NASA 등 공식 자료를 확인하세요.</li>
+  </ul>
+</section>
+</main>
+
+<footer><p>정보 전달용 학습 사이트 · 로그인·주문·결제 기능은 없어요.</p></footer>
+<script src="script.js"></script>
+</body>
+</html>

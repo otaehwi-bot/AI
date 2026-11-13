@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>태양계 탐험 - 행성 소개</title>
+<meta name="description" content="수성부터 해왕성까지 여덟 행성의 특징과 수치">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="stars" aria-hidden="true"></div>
+<header class="site"><nav class="nav" aria-label="주 메뉴">
+  <a class="logo" href="index.html">태양계 <span>탐험</span></a>
+  <ul>
+    <li><a href="index.html">홈</a></li>
+    <li><a href="planets.html" aria-current="page">행성 소개</a></li>
+    <li><a href="facts.html">비교·퀴즈</a></li>
+  </ul>
+</nav></header>
+
+<main class="wrap">
+  <h1>여덟 행성 소개</h1>
+  <p class="lead" style="margin-top:12px">태양에 가까운 순서대로 만나 보세요. 수치는 NASA 등에서 널리 알려진 대략값이에요.</p>
+
+  <div class="filters" role="group" aria-label="행성 종류 필터">
+    <button class="on" data-f="all">전체</button>
+    <button data-f="rock">암석형 (수·금·지·화)</button>
+    <button data-f="gas">가스·얼음 거인 (목·토·천·해)</button>
+  </div>
+
+  <div id="list">
+    <article class="planet reveal" id="mercury" data-type="rock">
+      <div class="pic"><img src="images/mercury.jpg" alt="수성 사진" loading="lazy"></div>
+      <div>
+        <span class="tag">1번째 · 암석형</span>
+        <h2>수성 Mercury</h2>
+        <p>태양계에서 가장 작고 태양에 가장 가까운 행성이에요. 대기가 거의 없어 낮에는 뜨겁고 밤에는 매우 차가워요. 표면은 달처럼 크레이터가 많아요.</p>
+        <dl class="stats">
+          <div><dt>지름</dt><dd>약 4,879 km</dd></div>
+          <div><dt>태양까지 거리</dt><dd>약 5,790만 km</dd></div>
+          <div><dt>공전 주기</dt><dd>약 88일</dd></div>
+          <div><dt>자전 주기</dt><dd>약 58.6일</dd></div>
+          <div><dt>위성</dt><dd>없음</dd></div>
+          <div><dt>표면 온도</dt><dd>약 -180 ~ 430 ℃</dd></div>
+        </dl>
+      </div>
+    </article>
+
+    <article class="planet reveal" id="venus" data-type="rock">
+      <div class="pic"><img src="images/venus.jpg" alt="금성 사진" loading="lazy"></div>
+      <div>
+        <span class="tag">2번째 · 암석형</span>
+        <h2>금성 Venus</h2>
+        <p>두꺼운 이산화탄소 대기와 구름 때문에 온실 효과가 심해 태양계에서 가장 뜨거운 행성이에요. 다른 행성들과 반대 방향으로 천천히 자전해요.</p>
+        <dl class="stats">
+          <div><dt>지름</dt><dd>약 12,104 km</dd></div>
+          <div><dt>태양까지 거리</dt><dd>약 1억 820만 km</dd></div>
+          <div><dt>공전 주기</dt><dd>약 224.7일</dd></div>
+          <div><dt>자전 주기</dt><dd>약 243일 (역방향)</dd></div>
+          <div><dt>위성</dt><dd>없음</dd></div>
+          <div><dt>표면 온도</dt><dd>약 465 ℃</dd></div>
+        </dl>
+      </div>
+    </article>
+
+    <article class="planet reveal" id="earth" data-type="rock">
+      <div class="pic"><img src="images/earth.jpg" alt="아폴로 17호가 찍은 지구 사진" loading="lazy"></div>
+      <div>
+        <span class="tag">3번째 · 암석형</span>
+        <h2>지구 Earth</h2>
+        <p>표면의 약 70%가 바다로 덮여 있고, 지금까지 생명이 확인된 유일한 행성이에요. 달이라는 하나의 큰 위성이 있어요.</p>
+        <dl class="stats">
+          <div><dt>지름</dt><dd>약 12,756 km</dd></div>
+          <div><dt>태양까지 거리</dt><dd>약 1억 4,960만 km</dd></div>
+          <div><dt>공전 주기</dt><dd>약 365.25일</dd></div>
+          <div><dt>자전 주기</dt><dd>약 24시간</dd></div>
+          <div><dt>위성</dt><dd>1개 (달)</dd></div>
+          <div><dt>평균 온도</dt><dd>약 15 ℃</dd></div>
+        </dl>
+      </div>
+    </article>
+
+    <article class="planet reveal" id="mars" data-type="rock">
+      <div class="pic"><img src="images/mars.jpg" alt="화성 사진" loading="lazy"></div>
+      <div>
+        <span class="tag">4번째 · 암석형</span>
+        <h2>화성 Mars</h2>
+        <p>표면의 산화철(녹) 때문에 붉게 보여요. 태양계에서 가장 높은 화산 올림포스 산이 있고, 과거에 물이 흘렀던 흔적이 발견되었어요.</p>
+        <dl class="stats">
+          <div><dt>지름</dt><dd>약 6,792 km</dd></div>
+          <div><dt>태양까지 거리</dt><dd>약 2억 2,790만 km</dd></div>
+          <div><dt>공전 주기</dt><dd>약 687일</dd></div>
+          <div><dt>자전 주기</dt><dd>약 24.6시간</dd></div>
+          <div><dt>위성</dt><dd>2개 (포보스·데이모스)</dd></div>
+          <div><dt>평균 온도</dt><dd>약 -65 ℃</dd></div>
+        </dl>
+      </div>
+    </article>
+
+    <article class="planet reveal" id="jupiter" data-type="gas">
+      <div class="pic"><img src="images/jupiter.jpg" alt="목성 사진" loading="lazy"></div>
+      <div>
+        <span class="tag">5번째 · 가스 거인</span>
+        <h2>목성 Jupiter</h2>
+        <p>태양계에서 가장 큰 행성으로, 나머지 행성을 모두 합친 것보다 질량이 커요. 수백 년째 이어지는 거대한 폭풍 '대적점'이 유명해요.</p>
+        <dl class="stats">
+          <div><dt>지름</dt><dd>약 142,984 km</dd></div>
+          <div><dt>태양까지 거리</dt><dd>약 7억 7,860만 km</dd></div>
+          <div><dt>공전 주기</dt><dd>약 11.9년</dd></div>
+          <div><dt>자전 주기</dt><dd>약 9.9시간</dd></div>
+          <div><dt>위성</dt><dd>90개 이상*</dd></div>
+          <div><dt>구름 꼭대기 온도</dt><dd>약 -110 ℃</dd></div>
+        </dl>
+      </div>
+    </article>
+
+    <article class="planet reveal" id="saturn" data-type="gas">
+      <div class="pic"><img src="images/saturn.jpg" alt="카시니 탐사선이 찍은 토성 사진" loading="lazy"></div>
+      <div>
+        <span class="tag">6번째 · 가스 거인</span>
+        <h2>토성 Saturn</h2>
+        <p>얼음과 암석 조각으로 이루어진 아름다운 고리로 유명해요. 밀도가 물보다 낮아서, 아주 큰 물통이 있다면 물에 뜰 수 있다는 이야기도 있어요.</p>
+        <dl class="stats">
+          <div><dt>지름</dt><dd>약 120,536 km</dd></div>
+          <div><dt>태양까지 거리</dt><dd>약 14억 3,350만 km</dd></div>
+          <div><dt>공전 주기</dt><dd>약 29.4년</dd></div>
+          <div><dt>자전 주기</dt><dd>약 10.7시간</dd></div>
+          <div><dt>위성</dt><dd>140개 이상*</dd></div>
+          <div><dt>구름 꼭대기 온도</dt><dd>약 -140 ℃</dd></div>
+        </dl>
+      </div>
+    </article>
+
+    <article class="planet reveal" id="uranus" data-type="gas">
+      <div class="pic"><img src="images/uranus.jpg" alt="천왕성 사진" loading="lazy"></div>
+      <div>
+        <span class="tag">7번째 · 얼음 거인</span>
+        <h2>천왕성 Uranus</h2>
+        <p>자전축이 약 98도 기울어 옆으로 누운 채 공전해요. 대기 속 메테인이 붉은 빛을 흡수해 청록색으로 보여요.</p>
+        <dl class="stats">
+          <div><dt>지름</dt><dd>약 51,118 km</dd></div>
+          <div><dt>태양까지 거리</dt><dd>약 28억 7,200만 km</dd></div>
+          <div><dt>공전 주기</dt><dd>약 84년</dd></div>
+          <div><dt>자전 주기</dt><dd>약 17.2시간 (역방향)</dd></div>
+          <div><dt>위성</dt><dd>28개 이상*</dd></div>
+          <div><dt>구름 꼭대기 온도</dt><dd>약 -195 ℃</dd></div>
+        </dl>
+      </div>
+    </article>
+
+    <article class="planet reveal" id="neptune" data-type="gas">
+      <div class="pic"><img src="images/neptune.jpg" alt="해왕성 사진" loading="lazy"></div>
+      <div>
+        <span class="tag">8번째 · 얼음 거인</span>
+        <h2>해왕성 Neptune</h2>
+        <p>태양에서 가장 먼 행성으로, 태양계에서 가장 강한 바람이 불어요. 수학 계산으로 위치를 먼저 예측한 뒤 1846년에 발견되었어요.</p>
+        <dl class="stats">
+          <div><dt>지름</dt><dd>약 49,528 km</dd></div>
+          <div><dt>태양까지 거리</dt><dd>약 44억 9,500만 km</dd></div>
+          <div><dt>공전 주기</dt><dd>약 164.8년</dd></div>
+          <div><dt>자전 주기</dt><dd>약 16.1시간</dd></div>
+          <div><dt>위성</dt><dd>16개 이상*</dd></div>
+          <div><dt>구름 꼭대기 온도</dt><dd>약 -200 ℃</dd></div>
+        </dl>
+      </div>
+    </article>
+  </div>
+  <p class="note">* 위성 수는 새로 발견될 때마다 바뀌어요. 이 페이지의 수치는 대략값이며 직접 최신 자료와 대조한 것은 아니에요.</p>
+</main>
+
+<footer><p>정보 전달용 학습 사이트 · 이미지 출처는 <a href="facts.html#credits">비교·퀴즈 페이지</a>에 있어요.</p></footer>
+<script src="script.js"></script>
+</body>
+</html>

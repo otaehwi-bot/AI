@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>태양계 탐험 - 홈</title>
+<meta name="description" content="태양과 여덟 행성을 소개하는 정보 사이트">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="stars" aria-hidden="true"></div>
+<header class="site"><nav class="nav" aria-label="주 메뉴">
+  <a class="logo" href="index.html">태양계 <span>탐험</span></a>
+  <ul>
+    <li><a href="index.html" aria-current="page">홈</a></li>
+    <li><a href="planets.html">행성 소개</a></li>
+    <li><a href="facts.html">비교·퀴즈</a></li>
+  </ul>
+</nav></header>
+
+<main>
+<section class="wrap hero">
+  <div>
+    <span class="tag">TOUR OF THE SOLAR SYSTEM</span>
+    <h1>태양을 도는<br>여덟 개의 세계</h1>
+    <p class="lead" style="margin-top:16px">태양계는 약 46억 년 전에 태어났어요. 중심의 태양과 그 둘레를 도는 여덟 행성을 사진과 함께 쉽게 살펴보세요.</p>
+    <div class="btns">
+      <a class="btn" href="planets.html">행성 만나러 가기</a>
+      <a class="btn ghost" href="facts.html">크기 비교하기</a>
+    </div>
+  </div>
+  <div class="sun-box"><img src="images/sun.jpg" alt="NASA 태양활동관측위성(SDO)이 찍은 태양" width="440" height="440"></div>
+</section>
+
+<section class="wrap reveal">
+  <h2>움직이는 태양계</h2>
+  <p class="lead">안쪽 행성일수록 태양을 빨리 돌아요. 아래 그림은 이해를 돕는 모형이라 크기와 거리, 속도는 실제 비율이 아니에요.</p>
+  <div class="orbits" role="img" aria-label="태양 둘레를 도는 여덟 행성의 궤도 모형">
+    <div class="sun"></div>
+    <div class="orbit" style="width:18%;height:18%;animation-duration:6s"><i style="--s:7px;--c:#b5a59a"></i></div>
+    <div class="orbit" style="width:27%;height:27%;animation-duration:10s"><i style="--s:10px;--c:#e8cda0"></i></div>
+    <div class="orbit" style="width:37%;height:37%;animation-duration:14s"><i style="--s:11px;--c:#4f8cff"></i></div>
+    <div class="orbit" style="width:47%;height:47%;animation-duration:19s"><i style="--s:9px;--c:#d9603b"></i></div>
+    <div class="orbit" style="width:62%;height:62%;animation-duration:30s"><i style="--s:22px;--c:#d8b48a"></i></div>
+    <div class="orbit" style="width:76%;height:76%;animation-duration:42s"><i style="--s:19px;--c:#e6d28f"></i></div>
+    <div class="orbit" style="width:88%;height:88%;animation-duration:56s"><i style="--s:14px;--c:#8fe0e6"></i></div>
+    <div class="orbit" style="width:99%;height:99%;animation-duration:70s"><i style="--s:14px;--c:#4263d8"></i></div>
+  </div>
+  <p class="note">수성 → 금성 → 지구 → 화성 → 목성 → 토성 → 천왕성 → 해왕성 (안쪽부터)</p>
+</section>
+
+<section class="wrap reveal">
+  <h2>행성 바로가기</h2>
+  <div class="grid">
+    <a class="card mini" href="planets.html#mercury"><img src="images/mercury.jpg" alt="수성"><div><b>수성</b><small>가장 작은 행성</small></div></a>
+    <a class="card mini" href="planets.html#venus"><img src="images/venus.jpg" alt="금성"><div><b>금성</b><small>가장 뜨거운 행성</small></div></a>
+    <a class="card mini" href="planets.html#earth"><img src="images/earth.jpg" alt="지구"><div><b>지구</b><small>우리가 사는 곳</small></div></a>
+    <a class="card mini" href="planets.html#mars"><img src="images/mars.jpg" alt="화성"><div><b>화성</b><small>붉은 행성</small></div></a>
+    <a class="card mini" href="planets.html#jupiter"><img src="images/jupiter.jpg" alt="목성"><div><b>목성</b><small>가장 큰 행성</small></div></a>
+    <a class="card mini" href="planets.html#saturn"><img src="images/saturn.jpg" alt="토성"><div><b>토성</b><small>멋진 고리</small></div></a>
+    <a class="card mini" href="planets.html#uranus"><img src="images/uranus.jpg" alt="천왕성"><div><b>천왕성</b><small>누워서 도는 행성</small></div></a>
+    <a class="card mini" href="planets.html#neptune"><img src="images/neptune.jpg" alt="해왕성"><div><b>해왕성</b><small>가장 먼 행성</small></div></a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p>정보 전달용 학습 사이트 · 이미지 출처는 <a href="facts.html#credits">비교·퀴즈 페이지</a>에 있어요.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
